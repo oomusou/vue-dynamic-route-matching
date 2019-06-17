@@ -11,7 +11,7 @@
 
 <script>
 let onProductClick = function() {
-  this.$router.push({ name: 'products', params: { id: '1' } });
+  this.$router.push({ path: 'products/1' });
 };
 
 export default {
