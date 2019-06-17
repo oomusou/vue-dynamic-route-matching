@@ -13,7 +13,7 @@ let products = {
 };
 
 let product = function() {
-  return products[this.$route.params.id] || 'N/A';
+  return products[this.$route.query.id] || 'N/A';
 };
 
 export default {

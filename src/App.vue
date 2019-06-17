@@ -3,27 +3,11 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <a href="#" @click="onProductClick">Product</a>
+      <router-link to="/products?id=2">Product</router-link>
     </div>
     <router-view/>
   </div>
 </template>
-
-<script>
-import router from './router';
-
-let onProductClick = () => router.push({ path: 'products/1' });
-
-export default {
-  name: 'app',
-  methods: {
-    onProductClick,
-  }
-}
-
-
-</script>
-
 
 <style>
 #app {

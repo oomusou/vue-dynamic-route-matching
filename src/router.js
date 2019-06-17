@@ -19,10 +19,9 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/products/:id',
+      path: '/products',
       name: 'products',
       component: () => import(/* webpackChunkName: "products" */ './views/Products.vue')
-
     }
   ]
 });
