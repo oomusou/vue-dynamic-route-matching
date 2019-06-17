@@ -3,11 +3,27 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/products/1">Product</router-link>
+      <a href="#" @click="onProductClick">Product</a>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+let onProductClick = function() {
+  this.$router.push({ name: 'products', params: { id: '1' } });
+};
+
+export default {
+  name: 'app',
+  methods: {
+    onProductClick,
+  }
+}
+
+
+</script>
+
 
 <style>
 #app {
