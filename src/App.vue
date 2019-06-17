@@ -10,9 +10,9 @@
 </template>
 
 <script>
-let onProductClick = function() {
-  this.$router.push({ path: 'products/1' });
-};
+import router from './router';
+
+let onProductClick = () => router.push({ path: 'products/1' });
 
 export default {
   name: 'app',
